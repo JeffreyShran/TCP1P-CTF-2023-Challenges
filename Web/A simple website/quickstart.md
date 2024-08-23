@@ -21,9 +21,9 @@ If you have no idea where to start, this might help.
    - **Identify Vulnerabilities:** Use tools and manual investigation to detect direct or indirect (3rd party) vulnerabilities.
    - **Use exploits:** Use exploits to build an attack chain, usually with the aim to gain access to the target, escalate privileges, or exfiltrate data.
 
-3. **Post-Exploitation**
-   - **Maintain Access:** Not relevant for CTF, but more generally we set up backdoors or other methods to retain access.
-   - **Data Extraction:** Not (usually) relevant for CTF, but more generally we extract sensitive information if needed.
+3. **Post-Exploitation** *Not (usually) relevant for CTF in the traditional sense. But I documented it as it can be an important step.*
+   - **Persistence**
+   - **Data Exfiltration**
 
-4. **Reporting**
+5. **Reporting** *Not (usually) relevant for CTF in the traditional sense. But I documented it as it can be an important step.*
    - **Document Findings:** Create a report of vulnerabilities, exploits, and provide guidance on how to fix the issues discovered. *(For capture the flag, we will simply extract and report the flag)*
