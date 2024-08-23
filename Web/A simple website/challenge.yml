@@ -23,7 +23,7 @@ connection_info: http://ctf.tcp1p.com:45681
 # Can be removed if unused
 # Accepts strings or dictionaries
 flags:
-    - TCP1P{OuTD4t3d_NuxxT_fR4m3w0RkK}
+    - TCP1P{l2e456_789_987654e2l}
 
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
