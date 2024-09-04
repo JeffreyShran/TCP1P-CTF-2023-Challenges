@@ -1,13 +1,21 @@
 # AppSec October 2024 CTF Quickstart Notes
+> This should ony take 15-25 minutes depending on experience and internet speed etc etc
 ## How to set up Hyper-V with Kali
-- See: https://www.kali.org/docs/virtualization/import-premade-hyperv/
+- See this for step-by-step instructions on how to install Hyper-V: https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-enabling-hyper-v-for-use-on-windows-11/ba-p/3745905
+- See this for how to get started with Kali on Hyper-V: https://www.kali.org/docs/virtualization/import-premade-hyperv/
+
+This is the correct virtual machine image to download if you're unsure:
+![This is the correct image to download](https://github.com/JeffreyShran/TCP1P-CTF-2023-Challenges/blob/c58d5579e79c02e4857d5dcbafbd8a4c38fed005/Web/A%20simple%20website/hyper.png)
+
 
 ## How to install docker.io and docker-compose on Kali
+> Run the following as a single command (`Shift + Insert`, to paste into the terminal)
 - `sudo apt-get update && sudo apt-get install docker.io docker-compose -y && sudo systemctl enable docker --now && docker --version`
 
  ## How to clone and run challenge
- The `docker-compose up` part takes a while, this is normal.
+> Run the following as a single command (`Shift + Insert`, to paste into the terminal)
 - `git init appsec-ctf-demo && cd appsec-ctf-demo && git remote add origin https://github.com/JeffreyShran/TCP1P-CTF-2023-Challenges.git && git config core.sparseCheckout true && echo "Web/A simple website" >> .git/info/sparse-checkout && git pull --depth=1 origin main && cd "Web/A simple website/" && sudo docker-compose up`
+> For info, the `docker-compose up` part takes a while, this is normal.
 - Now visit [http://localhost:45681](http://localhost:45681/) to access the web challenge.
 
 ## Basic web application testing procedure
